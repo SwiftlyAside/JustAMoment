@@ -1,32 +1,20 @@
-const calculator = {
+const title = document.querySelector("#title");
 
-    plus(a, b) {
-        return a + b;
-    },
+const BASE_COLOR = "rgb(0, 0, 139)";
+const OTHER_COLOR = "#b2fcff";
 
-    minus(a, b) {
-        return a - b;
-    },
-
-    mul(a, b) {
-        return a * b;
-    },
-
-    div(a, b) {
-        return a / b;
-    },
-
-    pow(a, b) {
-        return a ** b;
+function handleClick() {
+    const currentColor = title.style.color;
+    if (currentColor === BASE_COLOR)  {
+        title.style.color = OTHER_COLOR;
+    } else {
+        title.style.color = BASE_COLOR;
     }
+}
 
-};
+function init() {
+    title.style.color = BASE_COLOR;
+    title.addEventListener("mouseenter", handleClick);
+}
+init();
 
-// console.log(greetYou);
-const plus = calculator.plus(5, 5);
-const minus = calculator.minus(10, 5);
-const mul = calculator.mul(7, 6);
-const div = calculator.div(26 / 2);
-const pow = calculator.pow(5, 4);
-
-console.log(`plus: ${plus}, minus: ${minus}, mul: ${mul}, div: ${div}, pow: ${pow}`);
