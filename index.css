@@ -2,6 +2,37 @@ body{
     background-color: #ecfcff;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Trebuchet MS", serif;
+}
+
+
 h1 {
+    font-size: 72px;
     color: darkblue;
+    transition: color 0.5s ease-in-out;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.clicked {
+    color: #b2fcff;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
 }
