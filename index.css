@@ -21,7 +21,11 @@ h4 {
 }
 
 .btn {
+    height: 30px;
+    text-align: center;
     cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .clicked {
