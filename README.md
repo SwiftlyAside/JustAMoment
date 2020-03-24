@@ -2,7 +2,7 @@ JustAMoment
 =============
 잠깐 기다려!
 -------------
-
+https://img.shields.io/github/license/SwiftlyAside/JustAMoment
 Simple Clock & Timer.
 
 
